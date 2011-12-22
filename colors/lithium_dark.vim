@@ -20,11 +20,11 @@ hi LineNr           ctermfg=black       ctermbg=NONE        cterm=NONE
 
 hi VertSplit        ctermfg=black       ctermbg=black       cterm=NONE
 hi StatusLine       ctermfg=white       ctermbg=NONE        cterm=NONE
-hi StatusLineNC     ctermfg=blue        ctermbg=NONE        cterm=NONE
+hi StatusLineNC     ctermfg=blue        ctermbg=NONE        cterm=BOLD
 
 hi Folded           ctermfg=NONE        ctermbg=NONE        cterm=NONE
 hi Title            ctermfg=NONE        ctermbg=NONE        cterm=NONE
-hi Visual           ctermfg=NONE        ctermbg=magenta     cterm=NONE
+hi Visual           ctermfg=white       ctermbg=black        cterm=NONE
 
 hi SpecialKey       ctermfg=NONE        ctermbg=NONE        cterm=NONE
 
@@ -40,8 +40,8 @@ hi WarningMsg       ctermfg=white       ctermbg=red         cterm=NONE
 hi ModeMsg          ctermfg=magenta     ctermbg=NONE        cterm=BOLD
 
 if version >= 700 " Vim 7.x specific colors
-  hi CursorLine     ctermfg=NONE        ctermbg=NONE        cterm=underline
-  hi CursorColumn   ctermfg=white       ctermbg=darkgray    cterm=BOLD
+  hi CursorLine     ctermfg=NONE        ctermbg=NONE        cterm=NONE
+  hi CursorColumn   ctermfg=NONE        ctermbg=NONE        cterm=NONE
   hi MatchParen     ctermfg=NONE        ctermbg=red         cterm=NONE
   hi Pmenu          ctermfg=NONE        ctermbg=NONE        cterm=NONE
   hi PmenuSel       ctermfg=NONE        ctermbg=NONE        cterm=NONE
@@ -59,21 +59,21 @@ hi Comment          ctermfg=black       ctermbg=NONE        cterm=NONE
 hi String           ctermfg=green       ctermbg=NONE        cterm=NONE
 hi Number           ctermfg=magenta     ctermbg=NONE        cterm=NONE
 
-hi Keyword          ctermfg=blue        ctermbg=NONE        cterm=NONE
+hi Keyword          ctermfg=magenta     ctermbg=NONE        cterm=NONE
 hi PreProc          ctermfg=blue        ctermbg=NONE        cterm=NONE
-hi Conditional      ctermfg=blue        ctermbg=NONE        cterm=NONE
+hi Conditional      ctermfg=magenta     ctermbg=NONE        cterm=NONE
 
 hi Todo             ctermfg=red         ctermbg=NONE        cterm=NONE
 hi Constant         ctermfg=cyan        ctermbg=NONE        cterm=NONE
 
 hi Identifier       ctermfg=magenta     ctermbg=NONE        cterm=NONE
 hi Function         ctermfg=black       ctermbg=NONE        cterm=NONE
-hi Type             ctermfg=yellow      ctermbg=NONE        cterm=NONE
+hi Type             ctermfg=cyan        ctermbg=NONE        cterm=NONE
 hi Statement        ctermfg=blue        ctermbg=NONE        cterm=NONE
 
 hi Special          ctermfg=white       ctermbg=NONE        cterm=NONE
-hi Delimiter        ctermfg=cyan        ctermbg=NONE        cterm=NONE
-hi Operator         ctermfg=magenta     ctermbg=NONE        cterm=NONE
+hi Delimiter        ctermfg=green       ctermbg=NONE        cterm=NONE
+hi Operator         ctermfg=white       ctermbg=NONE        cterm=NONE
 
 hi link Character       Constant
 hi link Boolean         Constant
@@ -92,6 +92,23 @@ hi link Tag             Special
 hi link SpecialChar     Special
 hi link SpecialComment  Special
 hi link Debug           Special
+
+hi rubyClass            	ctermfg=magenta		cterm=NONE
+hi rubyMethodBlock      	ctermfg=white		cterm=NONE
+hi rubyOperator         	ctermfg=white
+hi rubyDefine           	ctermfg=magenta		cterm=NONE
+hi rubyControl			ctermfg=magenta		cterm=NONE
+hi rubyBlockParameter		ctermfg=blue		cterm=BOLD
+hi rubyFunction			ctermfg=white
+hi rubyInstanceVariable 	ctermfg=blue		cterm=NONE
+hi rubyRailsUserClass 		ctermfg=cyan
+hi rubyClassDeclaration		ctermfg=white
+hi rubyBlock			ctermfg=white
+hi rubyLocalVariableOrMethod	ctermfg=white
+hi rubyConditional    		ctermfg=magenta		cterm=NONE
+hi rubyInterpolation		ctermfg=green		cterm=BOLD
+hi rubyInterpolationDelimiter	ctermfg=green		cterm=BOLD
+hi rubyConstant			ctermfg=cyan		cterm=NONE
 
 " Special for XML
 hi link xmlTag          Keyword
