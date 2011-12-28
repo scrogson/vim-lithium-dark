@@ -18,13 +18,13 @@ hi NonText          ctermfg=black       ctermbg=NONE        cterm=NONE
 hi Cursor           ctermfg=black       ctermbg=red         cterm=NONE
 hi LineNr           ctermfg=black       ctermbg=NONE        cterm=NONE
 
-hi VertSplit        ctermfg=black       ctermbg=black       cterm=NONE
-hi StatusLine       ctermfg=white       ctermbg=NONE        cterm=NONE
+hi VertSplit        ctermfg=black       ctermbg=NONE        cterm=NONE
+hi StatusLine       ctermfg=black       ctermbg=NONE        cterm=NONE
 hi StatusLineNC     ctermfg=blue        ctermbg=NONE        cterm=BOLD
 
 hi Folded           ctermfg=NONE        ctermbg=NONE        cterm=NONE
 hi Title            ctermfg=NONE        ctermbg=NONE        cterm=NONE
-hi Visual           ctermfg=white       ctermbg=black        cterm=NONE
+hi Visual           ctermfg=white       ctermbg=black       cterm=NONE
 
 hi SpecialKey       ctermfg=NONE        ctermbg=NONE        cterm=NONE
 
@@ -93,6 +93,7 @@ hi link SpecialChar     Special
 hi link SpecialComment  Special
 hi link Debug           Special
 
+" Special for Ruby
 hi rubyClass            	ctermfg=magenta		cterm=NONE
 hi rubyMethodBlock      	ctermfg=white		cterm=NONE
 hi rubyOperator         	ctermfg=white
@@ -109,6 +110,9 @@ hi rubyConditional    		ctermfg=magenta		cterm=NONE
 hi rubyInterpolation		ctermfg=green		cterm=BOLD
 hi rubyInterpolationDelimiter	ctermfg=green		cterm=BOLD
 hi rubyConstant			ctermfg=cyan		cterm=NONE
+
+" Special for SCSS
+hi sassClass                    ctermfg=black
 
 " Special for XML
 hi link xmlTag          Keyword
