@@ -13,18 +13,18 @@ let colors_name = "lithium_dark"
 
 " General colors
 hi Normal           ctermfg=NONE        ctermbg=NONE        cterm=NONE
-hi NonText          ctermfg=black       ctermbg=NONE        cterm=NONE
+hi NonText          ctermfg=white       ctermbg=NONE        cterm=NONE
 
 hi Cursor           ctermfg=black       ctermbg=red         cterm=NONE
-hi LineNr           ctermfg=black       ctermbg=NONE        cterm=NONE
+hi LineNr           ctermfg=black       ctermbg=233        cterm=NONE
 
-hi VertSplit        ctermfg=black       ctermbg=NONE        cterm=NONE
-hi StatusLine       ctermfg=black       ctermbg=NONE        cterm=NONE
-hi StatusLineNC     ctermfg=blue        ctermbg=NONE        cterm=BOLD
+hi VertSplit        ctermfg=black       ctermbg=233        cterm=NONE
+hi StatusLine       ctermfg=black       ctermbg=233         cterm=NONE
+hi StatusLineNC     ctermfg=27        ctermbg=233        cterm=BOLD
 
 hi Folded           ctermfg=NONE        ctermbg=NONE        cterm=NONE
 hi Title            ctermfg=NONE        ctermbg=NONE        cterm=NONE
-hi Visual           ctermfg=white       ctermbg=black       cterm=NONE
+hi Visual           ctermfg=NONE       ctermbg=237       cterm=NONE
 
 hi SpecialKey       ctermfg=NONE        ctermbg=NONE        cterm=NONE
 
@@ -37,13 +37,13 @@ hi ErrorMsg         ctermfg=white       ctermbg=red         cterm=NONE
 hi WarningMsg       ctermfg=white       ctermbg=red         cterm=NONE
 
 " Message displayed in lower left, such as --INSERT--
-hi ModeMsg          ctermfg=magenta     ctermbg=NONE        cterm=BOLD
+hi ModeMsg          ctermfg=162     ctermbg=NONE        cterm=BOLD
 
 if version >= 700 " Vim 7.x specific colors
-  hi CursorLine     ctermfg=NONE        ctermbg=NONE        cterm=NONE
+  hi CursorLine     ctermfg=NONE        ctermbg=234        cterm=NONE
   hi CursorColumn   ctermfg=NONE        ctermbg=NONE        cterm=NONE
   hi MatchParen     ctermfg=NONE        ctermbg=red         cterm=NONE
-  hi Pmenu          ctermfg=NONE        ctermbg=NONE        cterm=NONE
+  hi Pmenu          ctermfg=NONE        ctermbg=16        cterm=NONE
   hi PmenuSel       ctermfg=NONE        ctermbg=NONE        cterm=NONE
   hi Search         ctermfg=white       ctermbg=black       cterm=underline
 endif
@@ -55,25 +55,25 @@ hi DiffDelete       cterm=bold          ctermbg=darkred     ctermfg=black
 
 
 " Syntax highlightin
-hi Comment          ctermfg=black       ctermbg=NONE        cterm=NONE
-hi String           ctermfg=green       ctermbg=NONE        cterm=NONE
-hi Number           ctermfg=magenta     ctermbg=NONE        cterm=NONE
+hi Comment          ctermfg=236           ctermbg=NONE        cterm=NONE
+hi String           ctermfg=10       ctermbg=NONE        cterm=NONE
+hi Number           ctermfg=199     ctermbg=NONE        cterm=NONE
 
-hi Keyword          ctermfg=magenta     ctermbg=NONE        cterm=NONE
-hi PreProc          ctermfg=blue        ctermbg=NONE        cterm=NONE
-hi Conditional      ctermfg=magenta     ctermbg=NONE        cterm=NONE
+hi Keyword          ctermfg=199     ctermbg=NONE        cterm=NONE
+hi PreProc          ctermfg=14        ctermbg=NONE        cterm=NONE
+hi Conditional      ctermfg=199     ctermbg=NONE        cterm=NONE
 
-hi Todo             ctermfg=red         ctermbg=NONE        cterm=NONE
-hi Constant         ctermfg=cyan        ctermbg=NONE        cterm=NONE
+hi Todo             ctermfg=196         ctermbg=NONE        cterm=NONE
+hi Constant         ctermfg=51        ctermbg=NONE        cterm=NONE
 
-hi Identifier       ctermfg=magenta     ctermbg=NONE        cterm=NONE
-hi Function         ctermfg=black       ctermbg=NONE        cterm=NONE
-hi Type             ctermfg=cyan        ctermbg=NONE        cterm=NONE
-hi Statement        ctermfg=blue        ctermbg=NONE        cterm=NONE
+hi Identifier       ctermfg=199     ctermbg=NONE        cterm=NONE
+hi Function         ctermfg=236       ctermbg=NONE        cterm=NONE
+hi Type             ctermfg=51        ctermbg=NONE        cterm=NONE
+hi Statement        ctermfg=4        ctermbg=NONE        cterm=NONE
 
-hi Special          ctermfg=white       ctermbg=NONE        cterm=NONE
-hi Delimiter        ctermfg=green       ctermbg=NONE        cterm=NONE
-hi Operator         ctermfg=white       ctermbg=NONE        cterm=NONE
+hi Special          ctermfg=15       ctermbg=NONE        cterm=NONE
+hi Delimiter        ctermfg=28       ctermbg=NONE        cterm=NONE
+hi Operator         ctermfg=15       ctermbg=NONE        cterm=NONE
 
 hi link Character       Constant
 hi link Boolean         Constant
@@ -94,22 +94,34 @@ hi link SpecialComment  Special
 hi link Debug           Special
 
 " Special for Ruby
-hi rubyClass            	ctermfg=magenta		cterm=NONE
+hi rubyClass            	ctermfg=199		cterm=NONE
 hi rubyMethodBlock      	ctermfg=white		cterm=NONE
 hi rubyOperator         	ctermfg=white
-hi rubyDefine           	ctermfg=magenta		cterm=NONE
-hi rubyControl			ctermfg=magenta		cterm=NONE
-hi rubyBlockParameter		ctermfg=blue		cterm=BOLD
+hi rubyDefine           	ctermfg=199		cterm=NONE
+hi rubyControl			ctermfg=199		cterm=NONE
+hi rubyBlockParameter		ctermfg=4		cterm=NONE
 hi rubyFunction			ctermfg=white
-hi rubyInstanceVariable 	ctermfg=blue		cterm=NONE
-hi rubyRailsUserClass 		ctermfg=cyan
-hi rubyClassDeclaration		ctermfg=white
+hi rubyInstanceVariable 	ctermfg=4		cterm=NONE
+hi rubyRailsUserClass 		ctermfg=98
+hi rubyClassDeclaration		ctermfg=15
 hi rubyBlock			ctermfg=white
 hi rubyLocalVariableOrMethod	ctermfg=white
-hi rubyConditional    		ctermfg=magenta		cterm=NONE
-hi rubyInterpolation		ctermfg=green		cterm=BOLD
-hi rubyInterpolationDelimiter	ctermfg=green		cterm=BOLD
-hi rubyConstant			ctermfg=cyan		cterm=NONE
+hi rubyConditional    		ctermfg=199		cterm=NONE
+hi rubyInterpolation		ctermfg=28		cterm=NONE
+hi rubyInterpolationDelimiter	ctermfg=118		cterm=NONE
+hi rubyConstant			ctermfg=99		cterm=NONE
+hi rubyRailsMethod              ctermfg=247
+hi rubySymbol                   ctermfg=91
+hi rubyBoolean			ctermfg=128
+hi rubyRegexpParens		ctermfg=199
+hi rubyRegexp      		ctermfg=199
+hi rubyRegexpDelimiter          ctermfg=199
+hi rubyRegexpBrackets           ctermfg=199
+hi rubyRegexpEscape             ctermfg=4
+hi rubyPseudoVariable           ctermfg=4
+hi rubyPseudoOperator           ctermfg=199
+hi rubyModule                   ctermfg=196
+hi rubyAccess			ctermfg=250
 
 " Special for SCSS
 hi sassClass                    ctermfg=black
