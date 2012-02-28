@@ -19,7 +19,7 @@ hi Cursor           ctermfg=black       ctermbg=red         cterm=NONE
 hi LineNr           ctermfg=235       ctermbg=233        cterm=NONE
 
 hi VertSplit        ctermfg=233       ctermbg=233        cterm=NONE
-hi StatusLine       ctermfg=black       ctermbg=233         cterm=NONE
+hi StatusLine       ctermfg=235       ctermbg=233         cterm=NONE
 hi StatusLineNC     ctermfg=27        ctermbg=233        cterm=BOLD
 
 hi Folded           ctermfg=NONE        ctermbg=NONE        cterm=NONE
@@ -56,7 +56,7 @@ hi DiffDelete       cterm=bold          ctermbg=darkred     ctermfg=black
 
 " Syntax highlightin
 hi Comment          ctermfg=236           ctermbg=NONE        cterm=NONE
-hi String           ctermfg=10       ctermbg=NONE        cterm=NONE
+hi String           ctermfg=82       ctermbg=NONE        cterm=NONE
 hi Number           ctermfg=199     ctermbg=NONE        cterm=NONE
 
 hi Keyword          ctermfg=199     ctermbg=NONE        cterm=NONE
@@ -125,6 +125,9 @@ hi rubyAccess			ctermfg=250
 
 " Special for SCSS
 hi sassClass                    ctermfg=237
+hi cssBoxProp                   ctermfg=237
+hi cssRenderProp                ctermfg=237
+hi cssUIAttr                    ctermfg=237
 hi cssColorProp			ctermfg=244
 hi cssColor			ctermfg=98
 
